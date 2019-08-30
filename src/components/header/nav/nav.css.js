@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.nav`
+  justify-self: end;
   ul {
     display: flex;
     list-style: none;

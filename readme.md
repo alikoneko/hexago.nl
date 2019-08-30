@@ -112,7 +112,7 @@ Find the site-wide configuration in `site-config.js`.
 
 ```js
 module.exports = {
-  siteTitle: `Hexago.nl`,
+  siteTitle: `Hexagonal: Ergonomic Hell`,
   siteTitleShort: `GatsbyU`,
   siteDescription: `An opinionated starter for Gatsby.`,
   siteUrl: `https://gu.fabianschultz.com`,
