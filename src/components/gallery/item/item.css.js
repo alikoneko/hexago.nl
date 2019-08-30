@@ -16,3 +16,14 @@ export const Copy = styled.p`
     margin-bottom: 4rem;
   `};
 `;
+
+export const Link = styled.a`
+  color: #fB43A;
+  margin: 0 0.75rem 0.75rem;
+  :hover {
+    color: #992409;
+  }
+  ${MEDIA.TABLET`
+    margin-bottom: 4rem;
+  `};
+`;

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
+  justify-items: center;
   padding: 2rem;
   background-color: #fef7d2;
   display: flex;
@@ -14,7 +15,7 @@ export const Container = styled.header`
     justify-self: start;
 
     &:hover {
-      color: inherit;
+      color: #992409;
     }
   }
 `;
