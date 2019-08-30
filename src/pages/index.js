@@ -9,8 +9,11 @@ import { graphql } from 'gatsby';
 const Index = ({ data }) => (
   <Layout>
     <Box>
-      <Title as="h2" size="large">
-        {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
+      <Title as="h1" size="large">
+        { data.homeJson.content.childMarkdownRemark.frontmatter.title }
+      </Title>
+      <Title as="h1" size="small">
+        { data.homeJson.content.childMarkdownRemark.frontmatter.subtitle }
       </Title>
     </Box>
     <Gallery items={data.homeJson.gallery} />
@@ -31,6 +34,10 @@ export const query = graphql`
         childMarkdownRemark {
           html
           rawMarkdownBody
+          frontmatter {
+            title
+            subtitle
+          }
         }
       }
       gallery {
