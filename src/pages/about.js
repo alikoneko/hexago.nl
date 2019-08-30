@@ -9,15 +9,16 @@ import { Title } from '../components/gallery/item/item.css';
 const About = ({ data }) => (
   <Layout>
     <Head pageTitle={data.aboutJson.title} />
-    <Box><Title dangerouslySetInnerHTML={{
+    <Box>
+      <Title dangerouslySetInnerHTML={{
           __html: data.aboutJson.content.childMarkdownRemark.frontmatter.title,
         }}
-    />
+      />
     </Box>
     <Box>
       <div
         dangerouslySetInnerHTML={{
-          __html: data.aboutJson.content.childMarkdownRemark.html,
+          __html: data.aboutJson.content.childMarkdownRemark.html
         }}
       />
     </Box>
