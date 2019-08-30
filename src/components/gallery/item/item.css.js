@@ -16,4 +16,3 @@ export const Copy = styled.p`
     margin-bottom: 4rem;
   `};
 `;
-

@@ -10,10 +10,9 @@ const About = ({ data }) => (
   <Layout>
     <Head pageTitle={data.aboutJson.title} />
     <Box>
-      <Title dangerouslySetInnerHTML={{
-          __html: data.aboutJson.content.childMarkdownRemark.frontmatter.title,
-        }}
-      />
+      <Title>
+        <h1>{ data.aboutJson.title }</h1>
+      </Title>
     </Box>
     <Box>
       <div
@@ -39,7 +38,7 @@ export const query = graphql`
         childMarkdownRemark {
           html,
           frontmatter {
-            title,
+            title
           }
         }
       }

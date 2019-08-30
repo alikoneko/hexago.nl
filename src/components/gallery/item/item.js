@@ -7,7 +7,7 @@ import Box from 'components/box';
 const Item = ({ title, copy, image }) => (
   <figure>
     <Img fluid={image ? image.childImageSharp.fluid : {}} alt={title} />
-    <Box>
+    <Box style="margin: 0 1rem">
       <figcaption>
         <Title>{title}</Title>
         <Copy>{copy}</Copy>
