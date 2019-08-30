@@ -12,5 +12,5 @@ export const Container = styled.div`
     linear-gradient(315deg, transparent 0.75em, #fef7d2 0) bottom right,
     linear-gradient(45deg,  transparent 0.75em, #fef7d2 0) bottom left;
   background-size: 50% 50%;
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
 `;
