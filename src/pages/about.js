@@ -4,10 +4,16 @@ import { graphql } from 'gatsby';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import Head from 'components/head';
+import { Title } from '../components/gallery/item/item.css';
 
 const About = ({ data }) => (
   <Layout>
     <Head pageTitle={data.aboutJson.title} />
+    <Box><Title dangerouslySetInnerHTML={{
+          __html: data.aboutJson.content.childMarkdownRemark.frontmatter.title,
+        }}
+    />
+    </Box>
     <Box>
       <div
         dangerouslySetInnerHTML={{
@@ -30,7 +36,10 @@ export const query = graphql`
       title
       content {
         childMarkdownRemark {
-          html
+          html,
+          frontmatter {
+            title,
+          }
         }
       }
     }
